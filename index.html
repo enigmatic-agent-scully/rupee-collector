@@ -5,6 +5,7 @@
     <title>rupee game</title>
     <link rel="stylesheet" src="assets/css/reset.css" type="text/css">
     <link rel="stylesheet" src="assets/css/style.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -20,20 +21,27 @@
     <p>Each time the game starts, the game will change the values of each rupee.</p></div>
 
     <div class = "container">
-        <span class = "box" id = "randomNumber"></span>
-        <span class = "box" id = "winsLosses"></span>
+        <span class = "box" id = "randomNumber">Random number:</span>
     </div>
     <div class = "container">
-        <input type = "image" src = "assets/images/PurpleRupee.png" id = "purp">
-        <input type = "image" src = "assets/images/SkyRupee.png" id = "blue">
-        <input type = "image" src = "assets/images/Rupee.png" id = "red">
-        <input type = "image" src = "assets/images/greenrupee.png" id = "green">
-
+        <span class = "box" id = "wins">Wins:</span>
+        <span class = "box" id = "Losses">Losses:</span>
     </div>
+    <div class = "container">
+        <input type = "image" class = "button" src = "assets/images/PurpleRupee.png" id = "purp">
+        <input type = "image" class = "button" src = "assets/images/SkyRupee.png" id = "blue">
+        <input type = "image" class = "button" src = "assets/images/Rupee.png" id = "red">
+        <input type = "image" class = "button" src = "assets/images/greenrupee.png" id = "green">
+    </div>
+    <div class = "container">
+        <span class = "box" id = "scoreBox">Total:</span>
+    </div>
+
 
 
 
     <script src="assets/javascript/game.js" type="text/javascript"></script>
+    
 </body>
 
 </html>
