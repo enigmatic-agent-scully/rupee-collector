@@ -12,11 +12,11 @@ Click on the rupees to increase your payment. Once your payment amount is equal 
 
 Good luck!
 
-### Getting Started
+## Getting Started
 
 Click on one of the rupees to begin adding to your payment amount!
 
-##### Contact
+### Contact
 
 If you have any questions, comments, or suggestions, please contact me via gitHub at [GitHub](https://github.com/enigmatic-agent-scully)
 

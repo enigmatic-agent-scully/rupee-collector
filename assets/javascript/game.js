@@ -4,7 +4,8 @@ var purp = 0;
 var green = 0;
 var blue = 0;
 var red = 0;
-var count = 0;
+var payment = 0;
+var count = [];
 
 function getRandom(max, min) {
     return [Math.floor(Math.random() * (max - min) + min)];
@@ -18,40 +19,41 @@ function assignRupeeValues() {
     $("#purp").attr("value", purp);
     $("#blue").attr("value", blue);
     $("#red").attr("value", red);
-    $("#green").attr("value", green);
+    $("#green").attr("value", green);console.log("Purp: " + purp, "Blue: " + blue, "Red: " + red, "Green: " + green);
 }
 
 function assignValues () {
     var randomNumber = getRandom(121, 19);
-    $("#randomNumber").text("Random Number: " + randomNumber);
-    assignRupeeValues();
-    console.log("Purp: " + purp, "Blue: " + blue, "Red: " + red, "Green: " + green);
+    $("#randomNumber").text("Price: " + randomNumber + " rupees");
+    
 }
 
 function startGame() {
     $("#wins").text("Wins: " + wins);
     $("#losses").text("Losses: " + losses);
-    $("#total").text("Total: " + count);
+    $("#total").text("Payment: " + payment);
 }
 $("button").click(function () {
-    count = Number(count) + Number($(this).val());
-    $("#total").text("Total: " + count);
+    payment = Number(payment) + Number($(this).val());
+    $("#total").text("Total: " + payment);
+    console.log(payment);
+    evaluateTotal();
 })
 
 function evaluateTotal() {
-    if (count > randomNumber) {
+    if (payment > randomNumber) {
         losses = losses++;
         $("#losses").text("Losses: " + losses);
         randomNumber = getRandom(121, 19);
         assignRupeeValues();
-        count = 0;
+        payment = 0;
     }
-    else if (count === randomNumber) {
+    else if (payment === randomNumber) {
         wins = wins++;
         $("#wins").text("Wins: " + wins)
     }
-    else if (count < randomNumber) {
-        console.log(count);
+    else if (payment < randomNumber) {
+        console.log(payment);
     }
 }
 
