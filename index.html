@@ -4,17 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <title>rupee game</title>
-    <link src="assets/css/reset.css" rel="stylesheet">
-    <link src="assets/css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|VT323" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <h1 style="font-family: 'Press Start 2P'"><img src="assets/images/triforce.png">rupees collector<img src="assets/images/triforce.png"></h1>
-        </div>
+            <h1><img src="assets/images/TLoZ_Rupee_Sprite.png"> rupees collector <img src="assets/images/TLoZ_Rupee_Sprite.png"></h1>
     </header>
 
     <div class="container">
@@ -27,14 +25,19 @@
         <p>Each time the game starts, the game will change the values of each rupee.</p>
     </div>
 
-    <div class="container">
+    <div class="container"  id="stats">
         <span class="box" id="randomNumber"></span>
     </div>
-    <div class="container">
-        <span class="box" id="total">Total:</span>
+    <div class="container"  id="stats">
+        <span class="box" id="total"></span>
     </div>
-
-    <div class="container">
+    <div class="container" id="stats">
+    <span class="box" id="wins"></span>
+    </div>
+    <div class="container" id="stats">
+    <span class="box" id="losses"></span>
+    </div>
+    <div class="buttons">
         <button id="purp">
             <img src="assets/images/PurpleRupee.png">
         </button>
@@ -48,10 +51,7 @@
             <img src="assets/images/greenrupee.png">
         </button>
     </div>
-    <div class="container">
-        <span class="box" id="wins"></span>
-        <span class="box" id="losses">Losses:</span>
-    </div>
+    
 
 
 

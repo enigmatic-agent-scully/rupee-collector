@@ -1,7 +1,43 @@
 body {
-    background-color: green;
+    background-color: forestgreen;
 }
 h1 {
     font-family: 'Press Start 2P', cursive;
+    font-size: 32px;
+    padding: 10px;
 }
 
+div.container {
+    font-family: 'VT323';
+    font-size: 20px;
+    background-color: white;
+    margin: 10px;
+    border: black 1px solid;
+    float: left;
+}
+#stats {
+    clear: left;
+}
+p, span {
+    padding: 10px;
+    clear: right;
+}
+span.box#total {
+    clear: right;
+}
+
+button {
+    background-color: forestgreen;
+    padding: 10px;
+    border: none;
+}
+.buttons {
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    clear: left;
+    float: left;
+}
+.box {
+    clear: left;
+}

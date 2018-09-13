@@ -31,11 +31,11 @@ function assignValues () {
 function startGame() {
     $("#wins").text("Wins: " + wins);
     $("#losses").text("Losses: " + losses);
-    $("#total").text("Payment: " + payment);
+    $("#total").text("Payment: " + payment + " rupees");
 }
 $("button").click(function () {
     payment = Number(payment) + Number($(this).val());
-    $("#total").text("Total: " + payment);
+    $("#total").text("Payment: " + payment + " rupees");
     console.log(payment);
     evaluateTotal();
 })
@@ -47,6 +47,7 @@ function evaluateTotal() {
         randomNumber = getRandom(121, 19);
         assignRupeeValues();
         payment = 0;
+        $("#total").text("Payment: " + payment + " rupees");
     }
     else if (payment === randomNumber) {
         wins = wins++;
