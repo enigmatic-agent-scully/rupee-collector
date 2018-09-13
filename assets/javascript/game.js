@@ -12,33 +12,52 @@ function getRandom(max, min) {
 
 function assignRupeeValues() {
     purp = getRandom(13, 1);
-    console.log(purp);
-    green = getRandom(13, 1);
-    console.log(green);
-    red = getRandom(13, 1);
-    console.log(red);
     blue = getRandom(13, 1);
-    console.log(blue);
+    red = getRandom(13, 1);
+    green = getRandom(13, 1);
+    $("#purp").attr("value", purp);
+    $("#blue").attr("value", blue);
+    $("#red").attr("value", red);
+    $("#green").attr("value", green);
 }
 
-function assignValueAttr () {
-    $("#purp").attr("value", purp);
+function assignValues () {
+    var randomNumber = getRandom(121, 19);
+    $("#randomNumber").text("Random Number: " + randomNumber);
+    assignRupeeValues();
+    console.log("Purp: " + purp, "Blue: " + blue, "Red: " + red, "Green: " + green);
 }
 
 function startGame() {
-    var randomNumber = getRandom(120, 19);
-    $("#randomNumber").text("Random Number: " + randomNumber);
-    assignRupeeValues();
-    console.log(purp, red, green, blue);
     $("#wins").text("Wins: " + wins);
     $("#losses").text("Losses: " + losses);
-    assignValueAttr();
+    $("#total").text("Total: " + count);
+}
+$("button").click(function () {
+    count = Number(count) + Number($(this).val());
+    $("#total").text("Total: " + count);
+})
 
-    
-    
+function evaluateTotal() {
+    if (count > randomNumber) {
+        losses = losses++;
+        $("#losses").text("Losses: " + losses);
+        randomNumber = getRandom(121, 19);
+        assignRupeeValues();
+        count = 0;
+    }
+    else if (count === randomNumber) {
+        wins = wins++;
+        $("#wins").text("Wins: " + wins)
+    }
+    else if (count < randomNumber) {
+        console.log(count);
+    }
 }
 
 
+
+
 startGame();
-
-
+assignValues();
+assignRupeeValues();
