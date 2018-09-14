@@ -7,54 +7,55 @@
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|VT323" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
-            <h1><img src="assets/images/TLoZ_Rupee_Sprite.png"> rupees collector <img src="assets/images/TLoZ_Rupee_Sprite.png"></h1>
+        <h1><img src="assets/images/TLoZ_Rupee_Sprite.png"> rupee <img src="assets/images/TLoZ_Rupee_Sprite.png"></h1>
+        <h1><img src="assets/images/TLoZ_Rupee_Sprite.png"> collector <img src="assets/images/TLoZ_Rupee_Sprite.png"></h1>
     </header>
 
     <div class="container">
-        <p>You will be given the random price of an item at the start of the game.</p>
-        <p>There are four rupees below. By clicking on a rupee, you will add a specific amount of rupees to your total
-            payment.</p>
-        <p>You win the game by matching your total payment to the item price. You lose the game if your payment goes
-            above the price.</p>
-        <p>The value of each rupee is hidden from you until you click on it.</p>
-        <p>Each time the game starts, the game will change the values of each rupee.</p>
+        <p>The fairies want to play a game with you. They will pick a random item and tell you its price.</p>
+        <p>You have plenty of rupees, but you don't know their values!</p>
+        <p>When you click on each rupee, its value will be added to your payment amount.</p>
+        <p>Be careful! You will only be able to buy the item if your payment amount matches the item price EXACTLY.</p>
+        <p>If your payment amount exceeds the item price, you lose.</p>
+        <p>Don't worry, keep trying!</p>
     </div>
 
-    <div class="container"  id="stats">
+    <div class="container" id="stats">
         <span class="box" id="itemPrice"></span>
     </div>
-    <div class="container"  id="stats">
+    <div class="container" id="stats">
         <span class="box" id="total"></span>
     </div>
     <div class="container" id="stats">
-    <span class="box" id="wins"></span>
+            <span class="box" id="wins"></span>
+        </div>
+        <div class="container" id="stats">
+            <span class="box" id="losses"></span>
+        </div>
+        <div class="buttons">
+        <div class="buttonBox">
+            <button id="purp">
+                <img src="assets/images/PurpleRupee.png">
+            </button>
+            <button id="blue">
+                <img src="assets/images/SkyRupee.png">
+            </button>
+            <button id="red">
+                <img src="assets/images/Rupee.png">
+            </button>
+            <button id="green">
+                <img src="assets/images/greenrupee.png">
+            </button>
+        </div>
+        
+
     </div>
-    <div class="container" id="stats">
-    <span class="box" id="losses"></span>
-    </div>
-    <div class="buttons">
-        <div class = "buttonBox">
-        <button id="purp">
-            <img src="assets/images/PurpleRupee.png">
-        </button>
-        <button id="blue">
-            <img src="assets/images/SkyRupee.png">
-        </button>
-        <button id="red">
-            <img src="assets/images/Rupee.png">
-        </button>
-        <button id="green">
-            <img src="assets/images/greenrupee.png">
-        </button>
-    </div>
-</div>
-    
+
 
 
 

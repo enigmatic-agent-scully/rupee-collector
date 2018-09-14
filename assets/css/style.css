@@ -5,6 +5,7 @@ h1 {
     font-family: 'Press Start 2P', cursive;
     font-size: 32px;
     padding: 10px;
+    text-align: center;
 }
 
 div.container {
@@ -30,13 +31,16 @@ button {
     background-color: forestgreen;
     padding: 10px;
     border: none;
+    float: left;
+
 }
 .buttons {
     margin: 10px;
     background-color: white;
     padding: 10px;
-    clear: left;
     float: left;
+    clear: left;
+    
 }
 .buttonBox {
     background-color: forestgreen;

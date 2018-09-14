@@ -33,8 +33,8 @@ function assignValues() {
 }
 
 function startGame() {
-    $("#wins").text("Wins: " + wins);
-    $("#losses").text("Losses: " + losses);
+    $("#wins").text("Items Won: " + wins);
+    $("#losses").text("Items Lost: " + losses);
     $("#total").text("Payment: " + payment + " rupees");
 }
 $("button").click(function () {
@@ -48,13 +48,13 @@ function evaluateTotal() {
         if ((payment > currentPrice)) {
             losses++;
             console.log(losses);
-            $("#losses").text("Losses: " + losses);
+            $("#losses").text("Items Lost: " + losses);
             $("#total").text("Payment: " + payment + " rupees");
             resetGame();
         }
         else if ((payment === currentPrice)) {
             wins++;
-            $("#wins").text("Wins: " + wins);
+            $("#wins").text("Items Won: " + wins);
             resetGame();
     }
     else {
