@@ -1,50 +1,53 @@
 body {
-    background-color: forestgreen;
+  background-color: forestgreen;
+  display: flex;
+  justify-content: center;
 }
 h1 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 32px;
-    padding: 10px;
-    text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 32px;
+  padding: 10px;
+  text-align: center;
 }
-
+div.main {
+  font-family: "VT323";
+  font-size: 20px;
+  background-color: forestgreen;
+  margin: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+div.intro {
+  font-family: "VT323";
+  font-size: 20px;
+  background-color: white;
+  margin: 10px;
+  border: black 1px solid;
+  justify-content: space-evenly;
+}
 div.container {
-    font-family: 'VT323';
-    font-size: 20px;
-    background-color: white;
-    margin: 10px;
-    border: black 1px solid;
-    float: left;
+  font-family: "VT323";
+  font-size: 20px;
+  background-color: white;
+  margin: 20px 10px;
+  border: black 1px solid;
+  text-align: center;
 }
-#stats {
-    clear: left;
+p,
+span {
+  padding: 10px;
 }
-p, span {
-    padding: 10px;
-    clear: right;
-}
-span.box#total {
-    clear: right;
-}
-
 button {
-    background-color: forestgreen;
-    padding: 10px;
-    border: none;
-    float: left;
-
+  background-color: forestgreen;
+  padding: 10px 40px;
+  border: none;
 }
 .buttons {
-    margin: 10px;
-    background-color: white;
-    padding: 10px;
-    float: left;
-    clear: left;
-    
+  margin: 10px;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
 }
 .buttonBox {
-    background-color: forestgreen;
-}
-.box {
-    clear: left;
+  background-color: forestgreen;
 }
