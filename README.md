@@ -1,6 +1,6 @@
 # Rupee Collector!
 
-This fun game challenges players to figure out the random values assigned to four different color rupees and use that knowledge to add the values until they equal a randomly chosen number.
+This fun game uses HTML, custom CSS, JavaScript, and jQuery to challenge players to figure out the random values assigned to four different color rupees and use that knowledge to add the values until they equal a randomly chosen number, the 'item price'.
 
 ## Instructions
 
